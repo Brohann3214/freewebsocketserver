@@ -1,11 +1,11 @@
 import { WebSocketServer } from 'ws';
 import admin from 'firebase-admin';
-import serviceAccount from './arcade-rtdb-firebase-adminsdk-x3m9o-c6a0f9e23b.json' with { type: 'json' }; // Replace with the path to your service account key JSON file
+import serviceAccount from './freertdb-firebase-adminsdk-fbsvc-0846017ccc.json' with { type: 'json' }; // Replace with the path to your service account key JSON file
 
 // Initialize Firebase
 admin.initializeApp({
   credential: admin.credential.cert(serviceAccount),
-  databaseURL: 'https://arcade-rtdb-default-rtdb.firebaseio.com' // Replace with your database URL
+  databaseURL: 'https://freertdb-default-rtdb.firebaseio.com/' // Replace with your database URL
 });
 
 const db = admin.database();
